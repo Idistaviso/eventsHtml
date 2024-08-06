@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event</title>
+    <style>
+        * { margin: 0; padding: 0; font-size: 1.1em;}
+        table {
+            border-top: 1px solid #999;
+            border-left: 1px solid #999;
+            border-spacing: 0;
+        }
+        td {
+            border-right: 1px solid #999;
+            border-bottom: 1px solid #999;
+            padding: 1px;}
+    </style>
+</head>
+<body>
+<table>
+    <thead>
+    <tr>
+        <td></td>
+        <td>05.08</td>
+        <td>06.08</td>
+        <td>07.08</td>
+        <td>08.08</td>
+        <td>09.08</td>
+        <td>10.08</td>
+        <td>11.08</td>
+        <td>12.08</td>
+        <td>13.08</td>
+        <td>14.08</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Алябьев Максим</td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #d9d9d9"></td>
+        <td style="background-color: #d9d9d9"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+    </tr>
+    <tr>
+        <td>Афонькин Максим</td>
+        <td style="background-color: #ff0000"></td>
+        <td style="background-color: #ff0000"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #ff0000"></td>
+        <td style="background-color: #ff0000"></td>
+        <td style="background-color: #ff0000"></td>
+        <td style="background-color: #ff0000"></td>
+        <td style="background-color: #ff0000"></td>
+        <td style="background-color: #ff0000"></td>
+        <td style="background-color: #ff0000"></td>
+    </tr>
+    <tr>
+        <td>Богодухов Евгений</td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #d9d9d9"></td>
+        <td style="background-color: #d9d9d9"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+    </tr>
+    <tr>
+        <td>Васильев Вячеслав</td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #d9d9d9"></td>
+        <td style="background-color: #d9d9d9"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+    </tr>
+    <tr>
+        <td>Герасимов Андрей</td>
+        <td style="background-color: #cbc04e"></td>
+        <td style="background-color: #cbc04e"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #cbc04e"></td>
+        <td style="background-color: #cbc04e"></td>
+        <td style="background-color: #cbc04e"></td>
+        <td style="background-color: #cbc04e"></td>
+        <td style="background-color: #cbc04e"></td>
+        <td style="background-color: #cbc04e"></td>
+        <td style="background-color: #cbc04e"></td>
+    </tr>
+    <tr>
+        <td>Донскова Оксана</td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #d9d9d9"></td>
+        <td style="background-color: #d9d9d9"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+    </tr>
+    <tr>
+        <td>Ефимов Алексей</td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #d9d9d9"></td>
+        <td style="background-color: #d9d9d9"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+    </tr>
+    <tr>
+        <td>Жданов Артем</td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #d9d9d9"></td>
+        <td style="background-color: #d9d9d9"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+    </tr>
+    <tr>
+        <td>Жерихов Владимир</td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #d9d9d9"></td>
+        <td style="background-color: #d9d9d9"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+    </tr>
+    <tr>
+        <td>Жуков Михаил</td>
+        <td style="background-color: #08aff3"></td>
+        <td style="background-color: #08aff3"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #08aff3"></td>
+        <td style="background-color: #08aff3"></td>
+        <td style="background-color: #20497c"></td>
+        <td style="background-color: #20497c"></td>
+        <td style="background-color: #20497c"></td>
+        <td style="background-color: #20497c"></td>
+        <td style="background-color: #20497c"></td>
+    </tr>
+    <tr>
+        <td>Забальский Александр</td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #d9d9d9"></td>
+        <td style="background-color: #d9d9d9"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+    </tr>
+    <tr>
+        <td>Захаров Максим</td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #d9d9d9"></td>
+        <td style="background-color: #d9d9d9"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+    </tr>
+    <tr>
+        <td>Звонов Андрей</td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #d9d9d9"></td>
+        <td style="background-color: #d9d9d9"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+    </tr>
+    <tr>
+        <td>Зотов Роман</td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #d9d9d9"></td>
+        <td style="background-color: #d9d9d9"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+    </tr>
+    <tr>
+        <td>Карманов Дмитрий</td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #d9d9d9"></td>
+        <td style="background-color: #d9d9d9"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+    </tr>
+    <tr>
+        <td>Кононов Максим</td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #d9d9d9"></td>
+        <td style="background-color: #d9d9d9"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+    </tr>
+    <tr>
+        <td>Коренев Виктор</td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #d9d9d9"></td>
+        <td style="background-color: #d9d9d9"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+    </tr>
+    <tr>
+        <td>Королева Ирина</td>
+        <td style="background-color: #feff00"></td>
+        <td style="background-color: #feff00"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #feff00"></td>
+        <td style="background-color: #feff00"></td>
+        <td style="background-color: #feff00"></td>
+        <td style="background-color: #feff00"></td>
+        <td style="background-color: #feff00"></td>
+        <td style="background-color: #ff0000"></td>
+        <td style="background-color: #ff0000"></td>
+    </tr>
+    <tr>
+        <td>Коток Анатолий</td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #d9d9d9"></td>
+        <td style="background-color: #d9d9d9"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+    </tr>
+    <tr>
+        <td>Лебедев Дмитрий</td>
+        <td style="background-color: #1eae4e"></td>
+        <td style="background-color: #1eae4e"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #1eae4e"></td>
+        <td style="background-color: #1eae4e"></td>
+        <td style="background-color: #1eae4e"></td>
+        <td style="background-color: #1eae4e"></td>
+        <td style="background-color: #1eae4e"></td>
+        <td style="background-color: #1eae4e"></td>
+        <td style="background-color: #1eae4e"></td>
+    </tr>
+    <tr>
+        <td>Лотарев Михаил</td>
+        <td style="background-color: #ffbf00"></td>
+        <td style="background-color: #ffbf00"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #ffbf00"></td>
+        <td style="background-color: #ffbf00"></td>
+        <td style="background-color: #ffbf00"></td>
+        <td style="background-color: #ffbf00"></td>
+        <td style="background-color: #ffbf00"></td>
+        <td style="background-color: #ffbf00"></td>
+        <td style="background-color: #ffbf00"></td>
+    </tr>
+    <tr>
+        <td>Ляпустин Вячеслав</td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #d9d9d9"></td>
+        <td style="background-color: #d9d9d9"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+    </tr>
+    <tr>
+        <td>Миронов Вячеслав</td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #d9d9d9"></td>
+        <td style="background-color: #d9d9d9"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+    </tr>
+    <tr>
+        <td>Нехаев Андрей</td>
+        <td style="background-color: #fe86fe"></td>
+        <td style="background-color: #fe86fe"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #fe86fe"></td>
+        <td style="background-color: #fe86fe"></td>
+        <td style="background-color: #fe86fe"></td>
+        <td style="background-color: #fe86fe"></td>
+        <td style="background-color: #fe86fe"></td>
+        <td style="background-color: #fe86fe"></td>
+        <td style="background-color: #fe86fe"></td>
+    </tr>
+    <tr>
+        <td>Никульшин Дмитрий</td>
+        <td style="background-color: #f3b07f"></td>
+        <td style="background-color: #f3b07f"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #f3b07f"></td>
+        <td style="background-color: #f3b07f"></td>
+        <td style="background-color: #f3b07f"></td>
+        <td style="background-color: #f3b07f"></td>
+        <td style="background-color: #f3b07f"></td>
+        <td style="background-color: #f3b07f"></td>
+        <td style="background-color: #f3b07f"></td>
+    </tr>
+    <tr>
+        <td>Прокофьев Илья</td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #d9d9d9"></td>
+        <td style="background-color: #d9d9d9"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+    </tr>
+    <tr>
+        <td>Пужихин Кирилл</td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #d9d9d9"></td>
+        <td style="background-color: #d9d9d9"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+    </tr>
+    <tr>
+        <td>Филатов Иван</td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #d9d9d9"></td>
+        <td style="background-color: #d9d9d9"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #eaeff0"></td>
+    </tr>
+    <tr>
+        <td>Чудин Михаил</td>
+        <td style="background-color: #feff00"></td>
+        <td style="background-color: #feff00"></td>
+        <td style="background-color: #eaeff0"></td>
+        <td style="background-color: #feff00"></td>
+        <td style="background-color: #feff00"></td>
+        <td style="background-color: #08aff3"></td>
+        <td style="background-color: #08aff3"></td>
+        <td style="background-color: #08aff3"></td>
+        <td style="background-color: #08aff3"></td>
+        <td style="background-color: #08aff3"></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
